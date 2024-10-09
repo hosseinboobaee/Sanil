@@ -1,0 +1,50 @@
+*{
+    font-family: IRANSansX, "Helvetica Neue", sans-serif !important;
+}
+.ever{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    margin-top: 1.5rem;
+    height: 7rem;
+}
+
+.link{
+    background-color: #1D68E8;
+    width: 9rem;
+    height: 3rem;
+    border-radius: 25px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    cursor: pointer;
+}
+.list-style ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    padding-left: 1rem;
+}
+.list-style li{
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.title h1{
+    font-size: 21px;
+    font-weight: bolder;
+}
+.title span{
+    color: #1D68E8;
+}
+@media screen and (max-width:992px) {
+    .list-style{
+        display: none;
+    }
+    .ever{
+        flex-wrap: wrap-reverse;
+    }
+}

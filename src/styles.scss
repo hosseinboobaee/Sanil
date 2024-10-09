@@ -1,0 +1,307 @@
+@use "../public/Scss/fonts";
+
+body {
+  background: #f6f6f6;
+  font-family: IRANSansX, "Helvetica Neue", sans-serif !important;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+mat-form-field,
+input {
+  font-family: "IRANSansX", sans-serif;
+}
+:root {
+  //برای رنگ اینپوت
+  --mdc-outlined-text-field-outline-color: #1a5fad;
+  --mdc-outlined-text-field-outline-backgroundcolor: #dbe3ec;
+  --mdc-outlined-text-field-container-shape: 0.75rem;
+  --bs-btn-border-radius: 0.5rem;
+  --mdc-outlined-text-field-label-text-size: 13px;
+  --mat-checkbox-label-text-size: 13px;
+  --mdc-form-field-label-text-size: 13px;
+  --mat-option-label-text-size: 13px;
+  --mat-form-field-container-height: 40px;
+  --mat-table-header-headline-size: 12px;
+  --mat-form-field-container-text-size: 12px;
+  --mdc-dialog-supporting-text-font: IRANSansX, "Helvetica Neue", sans-serif;
+  --mat-table-row-item-label-text-font: IRANSansX, "Helvetica Neue", sans-serif;
+  --mat-table-header-headline-font: IRANSansX, "Helvetica Neue", sans-serif;
+  --mdc-dialog-subhead-font: IRANSansX, "Helvetica Neue", sans-serif;
+  --mdc-dialog-subhead-tracking: IRANSansX, "Helvetica Neue", sans-serif;
+  --mdc-dialog-supporting-text-tracking: 0;
+  --mdc-dialog-container-shape: 1rem;
+  --bs-border-radius-sm: 0.75rem;
+  --mdc-checkbox-selected-checkmark-color: #fff;
+  --mdc-checkbox-selected-icon-color: #3ac55f;
+  --box-bg-color: #fff;
+  --bg-color: #f1f1f1;
+  --bg-grey: #e5e7eb;
+  --mdc-snackbar-container-shape: 0.75rem;
+  --mdc-snackbar-container-color: #020617;
+  --mdc-snackbar-supporting-text-color: #fff;
+  --mat-stepper-header-selected-state-icon-foreground-color: #fff;
+  --mat-stepper-header-done-state-icon-foreground-color: #fff;
+  --mat-stepper-header-edit-state-icon-foreground-color: #fff;
+  --mat-stepper-header-icon-foreground-color: #fff;
+  --mat-table-row-item-outline-color: #e8edee;
+  --mat-tab-header-label-text-size: 13px;
+  --mdc-snackbar-supporting-text-size: 13px;
+  --mdc-chip-label-text-size: 13px;
+  --mat-paginator-container-text-size: 12px;
+  --mdc-plain-tooltip-supporting-text-size: 12px;
+  --mat-table-header-container-height: 46px;
+}
+
+//برای فونت لیبل
+.mat-mdc-form-field:not(.mat-form-field-disabled)
+  .mat-mdc-floating-label.mdc-floating-label,
+.mat-mdc-text-field-wrapper.mdc-text-field--outlined .mdc-text-field__input,
+.mat-mdc-button .mdc-button__label,
+.mat-mdc-button .mat-icon,
+.mat-mdc-unelevated-button .mdc-button__label,
+.mat-mdc-unelevated-button .mat-icon,
+.mat-mdc-raised-button .mdc-button__label,
+.mat-mdc-raised-button .mat-icon,
+.mat-mdc-outlined-button .mdc-button__label,
+.mat-mdc-outlined-button .mat-icon {
+  font-family: "IRANSansX", sans-serif;
+}
+.mat-mdc-standard-chip.mat-mdc-chip-selected.mat-primary,
+.mat-mdc-standard-chip.mat-mdc-chip-highlighted.mat-primary {
+  --mdc-chip-elevated-container-color: #3ac55f;
+  --mdc-chip-label-text-color: #fff;
+  --mdc-chip-selected-label-text-color: #fff;
+  --mdc-chip-with-icon-selected-icon-color: #fff;
+  --mdc-chip-selected-label-text-color: #fff;
+}
+
+.btn-sm,
+.btn-group-sm > .btn {
+  --bs-btn-padding-y: 0.5rem;
+  --bs-btn-padding-x: 1rem;
+  --bs-btn-font-size: 12px;
+}
+
+body {
+  margin: 0;
+  font-family: IRANSansX, "Helvetica Neue", sans-serif !important;
+  -moz-font-feature-settings: "ss01";
+  -webkit-font-feature-settings: "ss01";
+  font-feature-settings: "ss01";
+}
+
+app-root {
+  height: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+app-dashboard {
+  height: 100%;
+  display: block;
+  background-color: #e5e7eb;
+  overflow: auto;
+}
+
+app-sidenav {
+  height: 100%;
+  display: block;
+}
+
+app-items-image {
+  height: 100%;
+  display: block;
+}
+
+app-navbar {
+  width: 100%;
+  display: block;
+}
+
+app-food-court {
+  height: 100%;
+  display: block;
+}
+
+app-menu {
+  background-color: var(--menu-bg-color);
+}
+
+app-food-court-menu {
+  height: 100%;
+  display: block;
+  background-color: var(--menu-bg-color);
+}
+
+.loading {
+  .mat-mdc-dialog-container .mdc-dialog__surface {
+    background-color: transparent !important;
+    box-shadow: none;
+  }
+}
+
+.mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.textarea
+  .mat-mdc-text-field-wrapper
+  .mat-mdc-form-field-flex
+  .mat-mdc-floating-label {
+  top: 18px;
+}
+
+.mat-mdc-text-field-wrapper.mdc-text-field--outlined
+  .mdc-notched-outline--upgraded
+  .mdc-floating-label--float-above {
+  --mat-mdc-form-field-label-transform: translateY(-26px)
+    scale(var(--mat-mdc-form-field-floating-label-scale, -0.25));
+  transform: var(--mat-mdc-form-field-label-transform);
+}
+
+.mat-mdc-form-field-icon-prefix,
+.mat-mdc-form-field-icon-suffix {
+  padding: 0 10px !important;
+  font-size: 1rem;
+  color: #a1a2a5;
+}
+.mat-bottom-sheet-container {
+  padding: 0 !important;
+  overflow: auto;
+  scrollbar-width: thin;
+  height: 100dvh !important;
+  max-height: 100vh !important;
+  max-height: 100dvh !important;
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 100px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 100px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+.mdc-dialog__title::before {
+  height: unset !important;
+}
+
+.mat-bottom-sheet-container-large {
+  max-width: 628px !important;
+}
+
+.mdc-checkbox__background {
+  border: 1px solid #d6dadb !important;
+  border-radius: 5px !important;
+  svg {
+    width: 10px;
+    height: 10px;
+    margin: auto;
+  }
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+  height: 100dvh;
+  mat-spinner {
+    display: block;
+    width: 50px !important;
+  }
+}
+
+div.mat-mdc-select-panel {
+  box-shadow: 0 5px 20px 0 rgba(20, 46, 53, 0.1) !important;
+  border-radius: 1rem !important;
+  padding: 0;
+  background-color: transparent;
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 100px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #b6b6b6;
+    border-radius: 100px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #818181;
+  }
+}
+
+.mat-mdc-select-arrow-wrapper {
+  height: 18px !important;
+}
+
+.mat-mdc-icon-button.mat-mdc-button-base {
+  --mdc-icon-button-state-layer-size: 40px;
+  padding: 8px;
+}
+.mat-mdc-snack-bar-container .mdc-snackbar__surface {
+  box-shadow: none !important;
+  .mdc-snackbar__label {
+    border-right: 6px solid transparent;
+  }
+}
+.mat-mdc-snack-bar-container.success
+  .mdc-snackbar__surface
+  .mdc-snackbar__label {
+  border-right-color: #2faf51;
+}
+.mat-mdc-snack-bar-container.error .mdc-snackbar__surface .mdc-snackbar__label {
+  border-right-color: #d34040;
+}
+
+.mat-mdc-tab-list {
+  background-color: #f3f6f8;
+  padding: 0.2rem;
+  border-radius: 0.75rem;
+}
+
+.mdc-tab-indicator__content {
+  border-top: none !important;
+}
+
+.mdc-tab {
+  border-radius: 0.6rem;
+  overflow: hidden;
+}
+.mdc-tab--active {
+  background-color: #fff !important;
+}
+.mat-mdc-tab-labels {
+  gap: 0.2rem;
+}
+
+body .mat-mdc-icon-button .mat-mdc-button-touch-target {
+  width: 40px;
+  height: 40px;
+}
+
+.cdk-overlay-dark-backdrop {
+  background: rgba(0, 0, 0, 0.8);
+}
+.light-box .mat-mdc-dialog-container .mdc-dialog__surface {
+  box-shadow: none;
+  background-color: transparent;
+}

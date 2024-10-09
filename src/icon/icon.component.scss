@@ -1,0 +1,40 @@
+*{
+    font-family: IRANSansX, "Helvetica Neue", sans-serif !important;
+}
+.ever-icon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+.ever-icon2{
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    background-color: #1D68E8;
+    width: 80%;
+    border-radius: 35px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.icon{
+    text-align: center;
+}
+.para{
+    display: flex;
+    color: white;
+    padding-top: 1rem;
+}
+.para p{
+    padding-right: 0.5rem;
+    font-size: 15px;
+    font-weight: 400;
+}
+.para span{
+    height: 1.4rem;
+    border-left: 2px solid #FFFFFF19;
+    padding-left: 0.5rem;
+    font-size: 20px;
+    font-weight: 800;
+}

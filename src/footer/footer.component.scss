@@ -1,0 +1,61 @@
+*{
+    font-family: IRANSansX, "Helvetica Neue", sans-serif !important;
+}
+.ever{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+    text-align: right;
+    background-color: #EFF2F6;
+    flex-wrap: wrap;
+}
+.fast{
+    text-align: right;
+}
+.fast h2{
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0.7;
+}
+.fast ul{
+    list-style: none;
+    padding: 0;
+}
+.fast a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.7;
+}
+.services{
+    text-align: right;
+}
+.services h2{
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0.7;
+}
+.services ul{
+    list-style: none;
+    padding: 0;
+}
+.services a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.7;
+}
+.salino{
+    width: 31rem;
+}
+.salino h2{
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0.7;
+}
+.salino span{
+    color: #1D68E8;
+}
+.salino p{
+    opacity: 0.8;
+    font-weight: 300;
+}

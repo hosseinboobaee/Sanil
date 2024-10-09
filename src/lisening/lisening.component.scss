@@ -1,0 +1,73 @@
+*{
+    font-family: IRANSansX, "Helvetica Neue", sans-serif !important;
+}
+.ever{
+    display: flex;
+    margin-top: 5rem;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap-reverse;
+}
+.video{
+    width: 38%;
+    visibility: hidden;
+}
+.video video{
+    width: 100%;
+}
+.para{
+    width: 33rem;
+    h2{
+        text-align: center;
+        font-size: 33px;
+        font-weight: 800;
+    }
+    span{
+       color: #1D68E8;
+   }
+   p{
+      text-align: right;
+      font-weight: 400;
+  }
+  .link{
+      display: flex;
+      justify-content: right;
+      gap: 3rem;
+      .address{
+          background-color: white;
+          width: 10rem;
+          height: 3rem;
+          border-radius: 29px;
+          border: 2px solid blue;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: 900;
+          a{
+             text-decoration: none;
+             color: #1D68E8;
+         }
+      }
+      .address2{
+          background-color: blue;
+          width: 10rem;
+          height: 3rem;
+          border-radius: 29px;
+          border: 2px solid white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: 900;
+          a{
+             text-decoration: none;
+             color: white;
+         }
+      }
+  }
+}
+@media screen and (max-width:992px) {
+    .video{
+        width: 80%;
+    }
+}
