@@ -25,23 +25,11 @@
     width: 24rem;
     height: 17rem;
     border-radius: 11px;
-    h2{
-        font-size: 23px;
-        margin-right: 2rem;
-        font-weight: 500;
-        color: #1D68E8;
-    }
-    p{
-        margin-right: 2rem;
-        margin-left: 1.2rem;
-        opacity: 0.7;
-    }
-    &&:hover{
-        background-color: #1D68E8;
-        color: white;
-    }
 }
-
+.box:hover{
+    background-color: #1D68E8;
+    color: white;
+}
 .icon{
     background-color: #EDF0F5;
     width: 4rem;
@@ -58,18 +46,28 @@
     justify-content: center;
     align-items: center;
 }
+.box h2{
+    font-size: 23px;
+    margin-right: 2rem;
+    font-weight: 500;
+    color: #1D68E8;
+}
+.box p{
+    margin-right: 2rem;
+    margin-left: 1.2rem;
+    opacity: 0.7;
+}
 .box2{
     background-color: #1D68E8;
     width: 24rem;
     height: 17rem;
     border-radius: 11px;
     box-shadow: 0px 0px 17px 4px rgba(71.00000000000001, 96.12391304347831, 198.00000000000006, 0.5);
-    &&:hover{
-        background-color: white;
-        color: black;
-    }
 }
-
+.box2:hover{
+    background-color: white;
+    color: black;
+}
 .icon2{
     background-color: #4884EC;
     width: 4rem;
