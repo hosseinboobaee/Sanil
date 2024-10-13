@@ -51,7 +51,7 @@
     border-radius: 20px;
     margin-top: 1rem;
 }
-.link a{
+.link span{
     text-decoration: none;
     color: #1D68E8;
     display: flex;
@@ -124,7 +124,7 @@
     .link{
         background-color: #1D68E8;
     }
-    .link a{
+    .link span{
         color: white;
     }
     .pooster{

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';
 import { SliderComponent } from '../slider/slider.component';
 import { HeaderComponent } from '../header/header.component';
 import { PoosterComponent } from '../pooster/pooster.component';
@@ -8,7 +8,6 @@ import { IconComponent } from '../icon/icon.component';
 import { LiseningComponent } from '../lisening/lisening.component';
 import { ModelComponent } from '../model/model.component';
 import { ExampleComponent } from '../example/example.component';
-import { VeblogComponent } from '../veblog/veblog.component';
 import { QuestionComponent } from '../question/question.component';
 import { FooterComponent } from '../footer/footer.component';
 
@@ -24,12 +23,12 @@ import { FooterComponent } from '../footer/footer.component';
     LiseningComponent,
     ModelComponent,
     ExampleComponent,
-    VeblogComponent,
     QuestionComponent,
     FooterComponent
     ],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrl: './home.component.scss',
+  schemas :[ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class HomeComponent {
 
