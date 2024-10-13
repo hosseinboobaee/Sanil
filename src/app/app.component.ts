@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 
@@ -10,7 +10,8 @@ import { HomeComponent } from './home/home.component';
       HomeComponent
   ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
+  schemas :[ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppComponent {
   title = 'my-app';

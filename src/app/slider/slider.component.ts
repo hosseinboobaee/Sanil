@@ -1,15 +1,13 @@
-import { Component} from '@angular/core';
-import Swiper from 'swiper';
-import 'swiper/css';
-
+import { CUSTOM_ELEMENTS_SCHEMA, Component} from '@angular/core';
 
 
 @Component({
   selector: 'app-slider',
   standalone: true,
-  imports: [],
+  imports:[ ],
   templateUrl: './slider.component.html',
-  styleUrl: './slider.component.scss'
+  styleUrl: './slider.component.scss',
+  schemas :[ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class SliderComponent {
 
