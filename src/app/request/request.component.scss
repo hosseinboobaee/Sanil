@@ -1,0 +1,21 @@
+img{
+   filter:hue-rotate(253deg) brightness(1.9);
+   width: 75%;
+   border-radius: 15px;
+}
+
+.page{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 20rem;
+}
+.form{
+    position: absolute;
+    background: #fff;
+    padding: 3rem;
+    border-radius: 15px;
+    left: 15%;
+    top: 50%;
+    z-index: 1;
+}

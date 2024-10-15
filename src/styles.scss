@@ -1,6 +1,7 @@
 @use "../public/Scss/fonts";
 
 body {
+  margin: 0;
   background: #f6f6f6;
   font-family: IRANSansX, "Helvetica Neue", sans-serif !important;
 }
@@ -8,13 +9,9 @@ html,
 body {
   height: 100%;
 }
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-}
 
 mat-form-field,
-input {
+input, h1, h2 {
   font-family: "IRANSansX", sans-serif;
 }
 :root {

@@ -1,0 +1,18 @@
+.frm{
+    text-align: center;
+    padding-top: 3rem;
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+// .mat-mdc-unelevated-button:not(:disabled) , mat-form-field{
+//     width: 18%;
+//}
+// @media screen and (max-width: 992px){
+//     .mat-mdc-unelevated-button:not(:disabled) , mat-form-field{
+//         width: 90%;
+//     }
+// }
