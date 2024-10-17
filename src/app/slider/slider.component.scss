@@ -46,3 +46,8 @@ swiper-container {
     }
   }
 }
+@media screen and (max-width:992px) {
+  .box{
+    flex-direction: column-reverse;
+  }
+}
