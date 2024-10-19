@@ -9,10 +9,10 @@ html,
 body {
   height: 100%;
 }
-
+.mat-display-medium, .mat-typography .mat-display-medium, .mat-typography h2,
 mat-form-field,
-input, h1, h2 {
-  font-family: "IRANSansX", sans-serif;
+input, h1, h2, h3 {
+  font-family: "IRANSansX", sans-serif !important;
 }
 :root {
   //برای رنگ اینپوت
