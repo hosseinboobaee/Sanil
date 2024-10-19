@@ -42,4 +42,13 @@
                    </div>
          </div>
 
+
+         @for(item of items; track item.id; let i = $index){
+          <h3 (click)="toggleItem(i)">{{ item.title }}</h3>
+               @if(item.isOpen){
+                    <p>{{ item.content }}</p>
+
+               }
+         }
+      
 </div>
