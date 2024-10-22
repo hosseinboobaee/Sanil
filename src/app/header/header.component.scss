@@ -8,6 +8,14 @@
     background-color: white;
     margin-top: 1.5rem;
     height: 7rem;
+    direction: rtl;
+    .title{
+        display: flex;
+        align-items: center;
+        img{
+            width: 7rem;
+        }
+    }
 }
 
 .link{

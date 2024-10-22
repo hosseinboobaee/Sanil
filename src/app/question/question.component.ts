@@ -1,14 +1,15 @@
-import { NgFor, NgIf } from '@angular/common';
+import { NgClass, NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-question',
   standalone: true,
-  imports: [NgFor,NgIf],
+  imports: [NgFor,NgIf,NgClass],
   templateUrl: './question.component.html',
   styleUrl: './question.component.scss'
 })
 export class QuestionComponent {
+  //readonly panelOpenState = signal(false);
 constructor(){
 
 }
