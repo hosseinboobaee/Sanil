@@ -6,8 +6,6 @@
     justify-content: space-around;
     align-items: center;
     background-color: white;
-    margin-top: 1.5rem;
-    height: 7rem;
     direction: rtl;
     .title{
         display: flex;
@@ -55,6 +53,6 @@
         display: none;
     }
     .ever{
-        flex-wrap: wrap-reverse;
+        flex-direction: column;
     }
 }

@@ -31,4 +31,9 @@ import { RequestComponent } from '../request/request.component';
   styleUrl: './home.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class HomeComponent {}
+export class HomeComponent {
+  test(){
+    console.log(window.scrollY);
+    
+  }
+}

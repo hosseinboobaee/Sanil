@@ -1,7 +1,29 @@
-*{
-    font-family: IRANSansX, "Helvetica Neue", sans-serif !important;
+* {
+  font-family: IRANSansX, "Helvetica Neue", sans-serif !important;
 }
-.page{
-    width: 70%;
-    margin: auto;
+.page {
+  width: 70%;
+  margin: auto;
+  direction: rtl;
+  .pic {
+    text-align: center;
+    img {
+      width: 60%;
+      border-radius: 11px;
+      margin: 1rem 0;
+    }
+  }
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+@media screen and (max-width:992px) {
+    img{
+        width: 100% !important;
+    }
+    h1{
+        line-height: 2rem;
+        font-size: 1.5rem !important;
+    }
 }

@@ -25,7 +25,7 @@ export class FormComponent {
   constructor(private http: HttpClient){
 
   }
-  public apiUrl:string = 'http://138.201.6.213:3000';
+  public apiUrl:string = 'https://bot.sanilo.ir';
   private _formBuilder = inject(FormBuilder);
   firstFormGroup = this._formBuilder.group({
     firstName: [''],
