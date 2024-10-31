@@ -1,53 +1,71 @@
-swiper-container {
-  text-align: center;
-  margin-top: 4rem;
-}
-.page {
-  width: 80%;
-}
+// swiper-container {
+//   text-align: center;
+//   margin-top: 4rem;
+// }
 
-.box {
-  display: flex;
-  justify-content: space-around;
-  img{
-    border-radius: 15px;
+// .box {
+//   display: flex;
+//   justify-content: space-around;
+//   img{
+//     border-radius: 15px;
+//   }
+//   .slider-content {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-around;
+//     .sanilo-head {
+//       background-image: linear-gradient(271deg, #bd1e2d33 0%, #ce154100 100%);
+//       color: #004458;
+//       font-size: 13px;
+//       font-weight: 500;
+//       border-radius: 10px;
+//       padding: 0.5rem;
+
+//     }
+//     .slide-title {
+//       font-family: IRANSansX;
+//       font-weight: 900;
+//       font-size: 2rem;
+//       color: #004458;
+//     }
+//     .requset {
+//       width: 50%;
+//     }
+//     .slider-footer {
+//       display: flex;
+//       justify-content: space-between;
+//       background-color: #f1f1f1;
+//       .count {
+//         font-size: 1.3rem;
+//         font-weight: 600;
+//         color: #005cbb;
+//       }
+//     }
+//   }
+// }
+// @media screen and (max-width:992px) {
+//   .box{
+//     flex-direction: column-reverse;
+//   }
+// }
+.page {
+  width: 100%;
+  position: relative;
+  img {
+    width: 100%;
+    height: 88vh;
   }
-  .slider-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    .sanilo-head {
-      background-image: linear-gradient(271deg, #bd1e2d33 0%, #ce154100 100%);
-      color: #004458;
-      font-size: 13px;
-      font-weight: 500;
-      border-radius: 10px;
-      padding: 0.5rem;
-  
-    }
-    .slide-title {
-      font-family: IRANSansX;
-      font-weight: 900;
-      font-size: 2rem;
-      color: #004458;
-    }
-    .requset {
-      width: 50%;
-    }
-    .slider-footer {
-      display: flex;
-      justify-content: space-between;
-      background-color: #f1f1f1;
-      .count {
-        font-size: 1.3rem;
-        font-weight: 600;
-        color: #005cbb;
-      }
-    }
+  .content {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
   }
-}
-@media screen and (max-width:992px) {
-  .box{
-    flex-direction: column-reverse;
+  .slide-title {
+    font-family: IRANSansX;
+    font-weight: 900;
+    font-size: 2rem;
   }
 }

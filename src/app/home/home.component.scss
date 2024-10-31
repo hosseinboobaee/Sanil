@@ -6,3 +6,8 @@
     height: 100vh;
     overflow-y: auto;
 }
+.head{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}

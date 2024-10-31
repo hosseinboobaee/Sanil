@@ -1,4 +1,4 @@
-<div class="ever">
+<!-- <div class="ever">
   <swiper-container
     class="mySwiper page"
     space-between="30"
@@ -72,4 +72,24 @@
       </div>
     </swiper-slide>
   </swiper-container>
+</div> -->
+<div class="page">
+  <img *ngFor="let image of images; let i = index"
+  [src]="image.imageSrc" [alt]="image.imageAlt"
+  [ngClass]="{'image-active' : selectedIndex === i}"
+  class="fade">
+
+  <div *ngIf="indicators" class="carousel-dot-container">
+    <span *ngFor="let dot of images; let i = index" class="dot"
+    ngClass="'active' : selectedIndex === 1" (click)="selectImage(i)"></span>
+</div>
+  <div class="content">
+    
+    <h2 class="slide-title">
+      با ســـانیلو در میان رقیبان خود بدرخشــــید
+    </h2>
+    <span class="sanilo-head">سانیلو بزرگترین مرجع طراحی سایت ایران</span>
+
+  </div>
+
 </div>
