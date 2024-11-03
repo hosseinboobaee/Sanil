@@ -1,13 +1,11 @@
 <div class="page" (scroll)="test()">
   <header class="head">
-    <app-header [images]="img" [autoSlide]="true"></app-header>
- 
+    <app-header></app-header>
   </header>
   <section>
-    <app-slider></app-slider>
+    <app-slider [images]="images" [autoSlide]="true"></app-slider>
   </section>
   <section class="section">
-
     <app-web-good></app-web-good>
     <app-services></app-services>
     <app-icon></app-icon>

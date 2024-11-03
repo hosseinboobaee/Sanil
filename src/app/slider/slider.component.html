@@ -1,95 +1,27 @@
-<!-- <div class="ever">
-  <swiper-container
-    class="mySwiper page"
-    space-between="30"
-    pagination="true"
-    pagination-clickable="true"
-  >
-    <swiper-slide class="slider">
-      <div class="box">
-        <div class="picture">
-          <img src="Image/1.jpg" alt="طراحی سایت سانیلو" />
-        </div>
-        <div class="slider-content">
-          <span class="sanilo-head">سانیلو بزرگترین مرجع طراحی سایت ایران</span>
-          <h2 class="slide-title">
-            با ســـانیلو در میان رقیبان خود بدرخشــــید
-          </h2>
-          <div>
-            <button mat-flat-button class="requset" routerLink="/login">
-              درخواست مشاوره
-            </button>
-          </div>
-          <div class="slider-footer">
-            <div>
-              <div class="count">+10</div>
-              <div>مشتری ثابت</div>
-            </div>
+<div class="page carousel-container">
+  @for(image of images; track image.Id; let i = $index){
+  <img
+    [src]="image.imageSrc"
+    [alt]="image.imageAlt"
+    [ngClass]="{ 'image-active': selectedIndex === i }"
+    class="fade"
+  />
 
-            <div>
-              <div class="count">+50</div>
-              <div>برند همکار</div>
-            </div>
-            <div>
-              <div class="count">+100</div>
-              <div>پروژه موفق</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </swiper-slide>
-    <swiper-slide class="slider">
-      <div class="box">
-        <div class="picture">
-          <img src="Image/1.jpg" alt="طراحی سایت سانیلو" />
-        </div>
-        <div class="slider-content">
-          <span class="sanilo-head">سانیلو بزرگترین مرجع طراحی سایت ایران</span>
-          <h2 class="slide-title">
-            با ســـانیلو در میان رقیبان خود بدرخشــــید
-          </h2>
-          <div>
-            <button mat-flat-button class="requset" routerLink="/login">
-              درخواست مشاوره
-            </button>
-          </div>
-          <div class="slider-footer">
-            <div>
-              <div class="count">+10</div>
-              <div>مشتری ثابت</div>
-            </div>
+  } @if(indicators){
+  <div class="carousel-dot-container">
+    @for(dot of images; track dot.Id; let i = $index){
+      <span
+        class="dot"
+        ngClass="'active' : selectedIndex === 1"
+        (click)="selectImage(i)"
+      ></span>
 
-            <div>
-              <div class="count">+50</div>
-              <div>برند همکار</div>
-            </div>
-            <div>
-              <div class="count">+100</div>
-              <div>پروژه موفق</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </swiper-slide>
-  </swiper-container>
-</div> -->
-<div class="page">
-  <img *ngFor="let image of images; let i = index"
-  [src]="image.imageSrc" [alt]="image.imageAlt"
-  [ngClass]="{'image-active' : selectedIndex === i}"
-  class="fade">
-
-  <div *ngIf="indicators" class="carousel-dot-container">
-    <span *ngFor="let dot of images; let i = index" class="dot"
-    ngClass="'active' : selectedIndex === 1" (click)="selectImage(i)"></span>
-</div>
-  <div class="content">
-    
-    <h2 class="slide-title">
-      با ســـانیلو در میان رقیبان خود بدرخشــــید
-    </h2>
-    <span class="sanilo-head">سانیلو بزرگترین مرجع طراحی سایت ایران</span>
-
+    }
   </div>
 
+  }
+  <div class="content">
+    <h2 class="slide-title">سانیلو، پیشگام در طراحی و توسعه وب‌سایت‌های حرفـــه‌ای</h2>
+    <span class="sanilo-head">از طراحی تا پیاده‌سازی، هر آنچه برای موفقیت آنلاین نیاز دارید</span>
+  </div>
 </div>
