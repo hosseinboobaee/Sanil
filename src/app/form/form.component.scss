@@ -8,11 +8,10 @@
         align-items: center;
     }
 }
-// .mat-mdc-unelevated-button:not(:disabled) , mat-form-field{
-//     width: 18%;
-//}
-// @media screen and (max-width: 992px){
-//     .mat-mdc-unelevated-button:not(:disabled) , mat-form-field{
-//         width: 90%;
-//     }
-// }
+.loading{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}

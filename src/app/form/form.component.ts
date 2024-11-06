@@ -5,6 +5,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { UserInformationModel } from '../ModelProject/UserInformtion.model';
+import { LoadingComponent } from '../loading/loading.component';
+import { delay, take } from 'rxjs';
 
 @Component({
   selector: 'app-form',
@@ -15,17 +17,15 @@ import { UserInformationModel } from '../ModelProject/UserInformtion.model';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
+    LoadingComponent,
   ],
   templateUrl: './form.component.html',
   styleUrl: './form.component.scss',
 })
-
-
 export class FormComponent {
-  constructor(private http: HttpClient){
-
-  }
-  public apiUrl:string = 'https://bot.sanilo.ir';
+  isLoading: boolean = false;
+  constructor(private http: HttpClient) {}
+  public apiUrl: string = 'https://bot.sanilo.ir';
   private _formBuilder = inject(FormBuilder);
   firstFormGroup = this._formBuilder.group({
     firstName: [''],
@@ -34,20 +34,35 @@ export class FormComponent {
     address: [''],
   });
 
-SendInfo(){
-const userInfo =new UserInformationModel(
-  this.firstFormGroup.controls['firstName'].value!,
-  this.firstFormGroup.controls['lastName'].value!,
-  this.firstFormGroup.controls['address'].value!,
-  this.firstFormGroup.controls['phoneNumber'].value!,
-)
-this.SendData(userInfo).subscribe(x =>{
-  console.log(x);
-  
-})
-}
+  SendInfo() {
+    this.isLoading = true;
+    const userInfo = new UserInformationModel(
+      this.firstFormGroup.controls['firstName'].value!,
+      this.firstFormGroup.controls['lastName'].value!,
+      this.firstFormGroup.controls['address'].value!,
+      this.firstFormGroup.controls['phoneNumber'].value!
+    );
+    this.SendData(userInfo)
+      .pipe(take(1), delay(1000))
+      .subscribe({
+        next: (x) => {
+          this.isLoading = false;
+          this.firstFormGroup.patchValue({
+            address: null,
+            firstName: null,
+            lastName: null,
+            phoneNumber: null,
+          });
+          console.log(x);
+        },
+        error: (err: any) => {
+          console.log(err);
+          this.isLoading = false;
+        },
+      });
+  }
 
-  SendData(userInfo:UserInformationModel){
-    return this.http.post<any>(`${this.apiUrl}/send-contact`,userInfo)
+  SendData(userInfo: UserInformationModel) {
+    return this.http.post<any>(`${this.apiUrl}/send-contact`, userInfo);
   }
 }

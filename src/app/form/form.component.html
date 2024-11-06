@@ -19,4 +19,8 @@
    
         <button mat-flat-button (click)="SendInfo()">ارسال درخواست</button>
     </form>
+    @if (isLoading) {
+      <app-loading class="loading"></app-loading>
+    }
+    
   </div>
