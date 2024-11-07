@@ -40,3 +40,8 @@
     text-shadow: none;
   }
 }
+@media screen and (max-width:992px) {
+  .loader span{
+      font-size: 3rem;
+  }
+}
