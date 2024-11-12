@@ -10,6 +10,7 @@ import { ExampleComponent } from '../example/example.component';
 import { QuestionComponent } from '../question/question.component';
 import { FooterComponent } from '../footer/footer.component';
 import { RequestComponent } from '../request/request.component';
+import { MoshavereComponent } from '../moshavere/moshavere.component';
 
 @Component({
   selector: 'app-home',
@@ -26,6 +27,7 @@ import { RequestComponent } from '../request/request.component';
     QuestionComponent,
     FooterComponent,
     RequestComponent,
+    MoshavereComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

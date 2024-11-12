@@ -5581,7 +5581,7 @@ body {
   font-size: var(--font-size-base);
   font-weight: normal;
   font-weight: var(--font-weight-base);
-  font-feature-settings: "ss01" on; /* Turns on alternate 'a' character without the top arm */
+  font-feature-settings: "pnum" ; /* Turns on alternate 'a' character without the top arm */
 }
 /* Sets global focus style. */
 :is(:focus, .focus, .focused) {
