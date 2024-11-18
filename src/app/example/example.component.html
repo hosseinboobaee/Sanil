@@ -3,65 +3,26 @@
     <h2><span> نمونه کارهای </span> ما</h2>
   </div>
   <div class="boxes">
-    <div class="box">
-      <div class="picture">
-        <img
-          src="https://mihanwp.com/demo/ahura/webdesign2/wp-content/uploads/sites/84/2024/01/demo-screenshot1.webp"
-          alt=""
-        />
+    @for(image of images; track image.id; let i = $index){
+      <div class="box">
+        <div class="picture">
+          <img
+            [src]="image.imageSrc"
+            [alt]="image.imageAlt"
+          />
+        </div>
+        <div class="para">
+          <p>{{image.header}}</p>
+          <h3>{{image.title}}</h3>
+        </div>
+        <div class="link">
+          <a [href]="image.href">
+            <span> مشاهده نمونه کار </span>
+          </a>
+        </div>
       </div>
-      <div class="para">
-        <p>طراحی وبسایت</p>
-        <h3>فروشگاه لوازم ورزشی عماد</h3>
-      </div>
-      <div class="link">
-        <span> مشاهده نمونه کار </span>
-      </div>
-    </div>
-    <div class="box">
-      <div class="picture">
-        <img
-          src="https://mihanwp.com/demo/ahura/webdesign2/wp-content/uploads/sites/84/2024/01/demo-screenshot4.webp"
-          alt=""
-        />
-      </div>
-      <div class="para">
-        <p>طراحی وبسایت</p>
-        <h3>فروشگاه موبایل و تبلت</h3>
-      </div>
-      <div class="link">
-        <span> مشاهده نمونه کار </span>
-      </div>
-    </div>
-    <div class="box">
-      <div class="picture">
-        <img
-          src="https://mihanwp.com/demo/ahura/webdesign2/wp-content/uploads/sites/84/2024/01/demo-screenshot2.webp"
-          alt=""
-        />
-      </div>
-      <div class="para">
-        <p>طراحی وبسایت</p>
-        <h3>فروشگاه بازی و کنسول</h3>
-      </div>
-      <div class="link">
-        <span> مشاهده نمونه کار </span>
-      </div>
-    </div>
-    <div class="box">
-      <div class="picture">
-        <img
-          src="https://mihanwp.com/demo/ahura/webdesign2/wp-content/uploads/sites/84/2024/01/demo-screenshot3.webp"
-          alt=""
-        />
-      </div>
-      <div class="para">
-        <p>طراحی وبسایت</p>
-        <h3>فروشگاه عینک طبی</h3>
-      </div>
-      <div class="link">
-        <span> مشاهده نمونه کار </span>
-      </div>
-    </div>
+
+    }
+
   </div>
 </div>

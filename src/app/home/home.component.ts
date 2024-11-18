@@ -40,12 +40,12 @@ export class HomeComponent {
   images = [
     {
       imageSrc: '/Image/slider1.webp',
-      imageAlt: '1',
+      imageAlt: 'طراحی وب سایت',
       Id: 1,
     },
     {
       imageSrc: '/Image/slider2.webp',
-      imageAlt: '2',
+      imageAlt: 'طراحی منو',
       Id: 2,
     }
   ];

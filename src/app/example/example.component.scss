@@ -19,19 +19,22 @@
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
-}
-.box{
-    width: 21rem;
-    background-color: white;
-    border-radius: 17px;
-    height: 30rem;
+    flex-direction:row-reverse ;
+    .box{
+        background-color: white;
+        border-radius: 17px;
+        width: 20rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    }
 }
 .picture{
     text-align: center;
-    padding-top: 1rem;
-}
-.picture img{
-    border-radius: 13px;
+    img{
+       border-radius: 13px;
+       height: 25rem;
+       width: 100%;
+   }
 }
 .para{
     text-align: right;
@@ -57,4 +60,8 @@
     padding-right: 4.5rem;
     padding-left: 4.5rem;
     border-radius: 8px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
 }
