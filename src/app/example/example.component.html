@@ -2,9 +2,9 @@
   <div class="title">
     <h2><span> نمونه کارهای </span> ما</h2>
   </div>
-  <div class="boxes">
+  <div class="templates">
     @for(image of images; track image.id; let i = $index){
-      <div class="box">
+      <div class="template">
         <div class="picture">
           <img
             [src]="image.imageSrc"
@@ -24,5 +24,9 @@
 
     }
 
+  </div>
+  <div class="buttons">
+    <span class="prev" (click)="Prev()"></span>
+    <span class="next" (click)="Next()"></span>
   </div>
 </div>
